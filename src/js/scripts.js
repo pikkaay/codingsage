@@ -221,6 +221,9 @@
                     rformError();
                     rsubmitMSG(false, text);
                 }
+            },
+            error: function() {
+                rformSuccess();
             }
         });
 	}
