@@ -212,8 +212,8 @@
         
         $.ajax({
             type: "GET",
-            url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc6YGK7tLjsnKJyKHhYxNF6i8X8jsWNAkuYZAZDuR7R0sbN_w/formResponse",
-            data: "entry.893598805=" + name + "&entry.1231868761=" + email + "&entry.117740411=" + phone + "&terms=" + terms, 
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSdqWJGWKXE2E-UGhBxQPgZ7MTQYzE7bTRCiMak76wVjFsJM-A/formResponse",
+            data: "entry.186396931=" + name + "&entry.517663991=" + email + "&entry.290051565=" + phone + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
                     rformSuccess();
@@ -223,6 +223,7 @@
                 }
             },
             error: function() {
+                console.log('error')
                 rformSuccess();
             }
         });
