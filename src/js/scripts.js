@@ -230,7 +230,7 @@
 
     function rformSuccess() {
         $("#registrationForm")[0].reset();
-        rsubmitMSG(true, "Request Submitted!");
+        rsubmitMSG(true, "Registration Success <br /> We will get back to you soon!");
         $("input").removeClass('notEmpty'); // resets the field label after submission
     }
 
@@ -246,7 +246,7 @@
         } else {
             var msgClasses = "h3 text-center";
         }
-        $("#rmsgSubmit").removeClass().addClass(msgClasses).text(msg);
+        $("#rmsgSubmit").removeClass().addClass(msgClasses).html(msg);
     }
     
 
